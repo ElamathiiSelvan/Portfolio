@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Elamathi Selvan</title>
+    <!-- remix box icons -->
+   <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://kit.fontawesome.com/5f6d8f84a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo"><span class="color">E</span>lamathi Selvan</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li> <a href="#Education">Education</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                
+
+                <i class="ri-close-line" onclick="closemenu()"></i>   
+            </ul>
+        
+
+            <i class="ri-menu-line" onclick="openmenu()"></i>
+        </nav>
+        
+    </div>
+</div>
+
+<!-- About -->
+<div id="about">
+    
+    <div class="container">
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hello, I'm  <span>Elamathi Selvan</span></h1>
+            <p>Dynamic and diligent person seeking opportunity to enrich and
+              utilize skillsets through a contributing role in an esteemed firm.</p>
+        </div>
+        <div class="row">
+            <div id="about-col-1">
+                <img src="Photo Ela.jpeg" width="200" height="200">
+             </div>
+             <div id="about-col-2">
+                <h1 class="sub-title">About</h1>
+                <p>Passionate about crafting engaging and functional websites.I craft modern and user-friendly websites that make an impact.Lets collaborate and bring your digital vision to reality</p>
+                 
+                <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+        
+                <!-- <p class="tab-links">Skills</p> -->
+            </div> 
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <i class="fa-solid fa-code"></i>
+                    <li><span>Web Development</span><br>Web app development</li>
+                    <i class="fa-solid fa-robot"></i>
+                    <li><span>RPA</span><br>Automating repetitive tasks</li>
+                    <i class="fa-brands fa-hive"></i>
+                    <li><span>Blockchain</span><br>Distributed ledger technology</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Education -->
+<div id="Education">
+    <div class="container">
+        <h1 class="sub-title"> Education</h1>
+        <div class="Education-list">
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>B.Sc. Computer Technology</h2>
+                <h4>KG College of Arts and Science</h4>
+                <h4>2022-Present</h4>
+                <h4>81%</h4>
+            </div>
+            <div>
+                <i class="fa-solid fa-school"></i>
+                <h2>Higher Secondary Certificate</h2>
+                    <h4>Little Flower Matric Hr. Sec. school</h4>
+                    <h4>2021-2022</h4>
+                    <h4>88%</h4>
+            </div>
+            <div>
+                <i class="fa-solid fa-school"></i>
+                <h2>Secondary School Leaving Certificate</h2>
+                    <h4>Little Flower Matric Hr. Sec. school</h4>
+                    <h4>2021-2022</h4>
+                    <h4>77%</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects -->
+ <div id="Projects">
+    <div class="container">
+         <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="work">
+                <!-- <img src="work1.jpg"  width="0" height="200" alt=""> -->
+                As an RPA Developer, I led the development and deployment of a customer support chatbot to automate responses to common queries, significantly improving response time and customer satisfaction. This project utilized technologies such as UiPath and dialogflow.The project not only streamlined customer support operations but also demonstrated my ability to leverage RPA technologies to solve real-world problems efficiently
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- contact -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="ri-send-plane-fill"></i>contact@example.com</p>
+                <p><i class="ri-phone-fill"></i>9876543210</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/elamathi-selvan-7a45bb251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://github.com/ElamathiiSelvan"><i class="ri-github-fill"></i></a>
+                    <!-- <a href=""><i class="ri-instagram-fill"></i></a> -->
+                    <a href=""><i class="ri-mail-fill"></i></a>
+                </div>
+                <a href="ELAMATHI S (2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            
+  
+  <div class="contact-right"> 
+    <form>
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" row="6" placeholder="Your message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+
+    </form>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+<!-- Projects -->
+<!-- <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tablinks = document.getElementsByClassName("tab-contents");
+    // function opentab(tabname);
+
+
+</script>
+     -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+    }
+</script>
+</body>
+</html>
